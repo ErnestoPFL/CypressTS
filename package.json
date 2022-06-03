@@ -5,31 +5,32 @@
   "main": "index.js",
   "scripts": {
     "cy:open": "cypress open",
-    "cy:run": "cypress run"
+    "cy:run": "cypress run",
+    "lint": "eslint . --ext .ts"
   },
   "author": "Ernest Ismanoviç",
   "license": "ISC",
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.27.0",
+    "@typescript-eslint/parser": "^5.27.0",
     "cypress": "^9.6.1",
     "cypress-mochawesome-reporter": "^3.1.0",
     "eslint": "^8.16.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-cypress": "^2.12.1",
+    "eslint-config-airbnb-typescript": "^17.0.0",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-jsx-a11y": "^6.5.1",
-    "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.30.0",
     "eslint-plugin-react-hooks": "^4.5.0",
     "prettier": "^2.6.2",
-    "typescript": "^4.6.4"
+    "typescript": "^4.7.2"
   },
   "dependencies": {
-    "dotenv": "^16.0.1",
-    "node-slack": "0.0.7",
     "cypress-plugin-retries": "^1.5.2",
-    "rosie": "^2.1.0",
-    "faker": "^5.5.3"
+    "dotenv": "^16.0.1",
+    "faker": "^5.5.3",
+    "node-slack": "0.0.7",
+    "rosie": "^2.1.0"
   }
 }

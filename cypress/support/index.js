@@ -1,3 +1,4 @@
+/* eslint-disable import/no-unresolved */
 // ***********************************************************
 // This example support/index.js is processed and
 // loaded automatically before your test files.
@@ -14,8 +15,11 @@
 // ***********************************************************
 
 // Import commands.js using ES2015 syntax:
-import './commands';
-import 'cypress-plugin-retries';
+import '../commands'
+import 'cypress-plugin-retries'
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
+
+// Override defaults
+Cypress.Screenshot.defaults({ screenshotOnRunFailure: true })
