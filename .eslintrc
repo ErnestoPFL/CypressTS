@@ -1,19 +1,25 @@
-{
-  "extends": ["airbnb", "prettier"],
-  "plugins": ["cypress", "prettier"],
+{  
   "root": true,
-  "env": {
-    "cypress/globals": true
-  },
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+       "project": ["./tsconfig.json"]
+    },
+  "plugins": [
+    "@typescript-eslint"
+  ],
+  "extends": [
+    "airbnb",
+    "airbnb-base",
+    "airbnb-typescript/base",
+    "airbnb-typescript",
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended-requiring-type-checking",
+    "plugin:@typescript-eslint/recommended"
+  ],
   "rules": {
-    "import/prefer-default-export": "off",
-    "max-len": "off",
-    "func-names": "off",
-    "prefer-arrow-callback": "off",
-    "no-underscore-dangle": "off",
-    "no-unused-expressions": "off",
-    "arrow-body-style": "off",
-    "prettier/prettier": "error",
-    "camelcase": "off"
+    "@typescript-eslint/no-namespace": "off"
+
   }
+
 }

@@ -1,9 +1,10 @@
 {
     "compilerOptions": {
-        "target": "ES5",
-        "lib": ["es5", "DOM"],
+        "target": "ES6",
+        "allowJs": true,
+        "lib": ["es6", "DOM"],
         "types": ["cypress"]
     },
     "include": ["**/*.ts"],
-    "exclude": []
+    "exclude": ["node_modules"]
 }
