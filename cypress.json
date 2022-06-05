@@ -2,5 +2,10 @@
     "reporter": "cypress-mochawesome-reporter",
     "video": false,
     "defaultCommandTimeout": 10000,
-    "watchForFileChanges": false
+    "watchForFileChanges": false,
+    "env": {
+        "homePageUrl": "http://zero.webappsecurity.com/" ,
+        "loginPageUrl": "http://zero.webappsecurity.com/login.html" ,
+        "feedbackPageUrl": "http://zero.webappsecurity.com/feedback.html" 
+    }
 }

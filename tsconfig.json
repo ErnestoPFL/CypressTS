@@ -3,8 +3,9 @@
         "target": "ES6",
         "allowJs": true,
         "lib": ["es6", "DOM"],
-        "types": ["cypress"]
+        "types": ["cypress"],
+        "noEmit": true
     },
-    "include": ["**/*.ts"],
-    "exclude": ["node_modules"]
+    "include": ["**/*.ts", "../node_modules/cypress"],
+    "exclude": ["../node_modules/cypress/**/*.js"],
 }
