@@ -3,17 +3,17 @@ declare namespace Cypress {
     /**
      * Navigates to the home page of our application
      */
-    visitHomepage(): Chainable<Element>
+     visitHomePage(): Chainable<Element>
 
     /**
      * Navigates to the login page of our application
      */
-    visitLoginpage(): Chainable<Element>
+     visitLoginPage(): Chainable<Element>
 
     /**
      * Navigates to the feedback page of our application
      */
-    visitFeedbackpage(): Chainable<Element>
+     visitFeedbackPage(): Chainable<Element>
 
     /**
      * @param seconds - how many seconds should the execution wait
@@ -22,16 +22,16 @@ declare namespace Cypress {
   }
 }
 
-Cypress.Commands.add('visitHomepage', () => {
-  cy.visit('http://zero.webappsecurity.com/');
+Cypress.Commands.add('visitHomePage', () => {
+  cy.visit((Cypress.env('homePageUrl')));
 });
 
-Cypress.Commands.add('visitLoginpage', () => {
-  cy.visit('http://zero.webappsecurity.com/login.html');
+Cypress.Commands.add('visitLoginPage', () => {
+  cy.visit((Cypress.env('loginPageUrl')));
 });
 
-Cypress.Commands.add('visitFeedbackpage', () => {
-  cy.visit('http://zero.webappsecurity.com/feedback.html');
+Cypress.Commands.add('visitFeedbackPage', () => {
+  cy.visit((Cypress.env('feedbackPageUrl')));
 });
 
 Cypress.Commands.add('waitForSeconds', (seconds) => {
