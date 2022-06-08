@@ -1,8 +1,9 @@
 {
     "reporter": "cypress-mochawesome-reporter",
-    "video": false,
+    "video": true,
     "defaultCommandTimeout": 10000,
     "watchForFileChanges": false,
+    "projectId": "vwntvv",
     "env": {
         "homePageUrl": "http://zero.webappsecurity.com/" ,
         "loginPageUrl": "http://zero.webappsecurity.com/login.html" ,

@@ -6,7 +6,9 @@
   "scripts": {
     "cy:open": "cypress open",
     "cy:run": "cypress run",
-    "lint": "eslint . --ext .ts"
+    "lint": "eslint . --ext .ts",
+    "cy:run-dashboard": "npx cypress run --record --key b1ceb924-6995-4a3e-8709-c896a8739fb0",
+    "cy:run-video": "cypress run --record --key b1ceb924-6995-4a3e-8709-c896a8739fb0"
   },
   "author": "Ernest Ismanoviç",
   "license": "ISC",
