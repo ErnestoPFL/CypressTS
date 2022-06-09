@@ -6,9 +6,13 @@
   "scripts": {
     "cy:open": "cypress open",
     "cy:run": "cypress run",
+    "cy:run:chrome": "cypress run --browser chrome",
+    "cy:run:firefox": "cypress run --browser firefox",
+    "cy:run:electron": "cypress run --browser electron",
     "lint": "eslint . --ext .ts",
     "cy:run-dashboard": "npx cypress run --record --key b1ceb924-6995-4a3e-8709-c896a8739fb0",
-    "cy:run-video": "cypress run --record --key b1ceb924-6995-4a3e-8709-c896a8739fb0"
+    "cy:run-video": "cypress run --record --key b1ceb924-6995-4a3e-8709-c896a8739fb0",
+    "start-jenkins-server":  "java -jar jenkins.war -httpPort=8081 --enable-future-java"
   },
   "author": "Ernest Ismanoviç",
   "license": "ISC",
