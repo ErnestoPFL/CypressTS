@@ -22,3 +22,5 @@ import '../commands'
 
 // Override defaults
 Cypress.Screenshot.defaults({ screenshotOnRunFailure: true })
+
+require('cypress-dark/src/halloween')

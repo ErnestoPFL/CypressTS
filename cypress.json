@@ -8,5 +8,7 @@
         "homePageUrl": "http://zero.webappsecurity.com/" ,
         "loginPageUrl": "http://zero.webappsecurity.com/login.html" ,
         "feedbackPageUrl": "http://zero.webappsecurity.com/feedback.html" 
-    }
+    },
+    "theme": "dark",
+    "darkMediaQuery": true
 }
