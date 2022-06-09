@@ -12,7 +12,7 @@
     "lint": "eslint . --ext .ts",
     "cy:run-dashboard": "npx cypress run --record --key b1ceb924-6995-4a3e-8709-c896a8739fb0",
     "cy:run-video": "cypress run --record --key b1ceb924-6995-4a3e-8709-c896a8739fb0",
-    "start-jenkins-server":  "java -jar jenkins.war -httpPort=8081 --enable-future-java"
+    "start-jenkins-server": "java -jar jenkins.war -httpPort=8081 --enable-future-java"
   },
   "author": "Ernest Ismanoviç",
   "license": "ISC",
@@ -20,6 +20,7 @@
     "@typescript-eslint/eslint-plugin": "^5.27.0",
     "@typescript-eslint/parser": "^5.27.0",
     "cypress": "^9.6.1",
+    "cypress-dark": "^1.8.3",
     "eslint": "^8.16.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-airbnb-base": "^15.0.0",
