@@ -1,2 +1,3 @@
-import './navigation'
-import './loginPage'
+import './navigation';
+import './loginPage';
+import './feedbackPage';

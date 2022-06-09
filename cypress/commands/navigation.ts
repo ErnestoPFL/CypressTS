@@ -3,17 +3,17 @@ declare namespace Cypress {
     /**
      * Navigates to the home page of our application
      */
-     visitHomePage(): Chainable<Element>
+    visitHomePage(): Chainable<Element>
 
     /**
      * Navigates to the login page of our application
      */
-     visitLoginPage(): Chainable<Element>
+    visitLoginPage(): Chainable<Element>
 
     /**
      * Navigates to the feedback page of our application
      */
-     visitFeedbackPage(): Chainable<Element>
+    visitFeedbackPage(): Chainable<Element>
 
     /**
      * @param seconds - how many seconds should the execution wait
